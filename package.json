@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start" : "nodemon --exec babel-node --presets env,stage-2 src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -33,6 +34,7 @@
     "eslint-plugin-react": "^7.14.3",
     "graphql": "^14.5.7",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.7.1"
+    "mongoose": "^5.7.1",
+    "nodemon": "^1.19.2"
   }
 }
