@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const institutionSchema = new mongoose.Schema(
   {
-    Name: { type: String, required: true },
+    name: { type: String, required: true },
     location: { type: String, required: true },
     rating: String,
     review: String,
