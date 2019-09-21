@@ -15,5 +15,24 @@
   "bugs": {
     "url": "https://github.com/anis-meliti/hackathon-oyez-back/issues"
   },
-  "homepage": "https://github.com/anis-meliti/hackathon-oyez-back#readme"
+  "homepage": "https://github.com/anis-meliti/hackathon-oyez-back#readme",
+  "dependencies": {
+    "apollo-server": "^2.9.3",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.1.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-import-resolver-webpack": "^0.11.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "graphql": "^14.5.7",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.1"
+  }
 }
