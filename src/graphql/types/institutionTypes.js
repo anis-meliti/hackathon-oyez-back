@@ -1,6 +1,7 @@
 const institution = `
 type Institution {
     id: ID!
+    name: String
     login: String
     location: String
     rating: String
@@ -12,6 +13,7 @@ type Institution {
 
 input InstitutionInput {
     login: String
+    name: String
     location: String
     rating: String
     review: String

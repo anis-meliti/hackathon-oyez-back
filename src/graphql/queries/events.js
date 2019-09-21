@@ -6,5 +6,5 @@ export const eventsQueries = `
 
 export const eventtResolvers = {
   events: (_, $, { models }) => models.Event.find({}, {}, { sort: { createdAt: -1 } }),
-  event: (_, { id }, { models }) => models.event.findById(id),
+  event: (_, { id }, { models }) => models.Event.findById(id),
 };

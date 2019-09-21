@@ -2,7 +2,7 @@ const user = `
 type User {
     id: ID!
     login: String
-    mail: String
+    email: String
     password: String
     studyField: String   
     role: String 
@@ -20,7 +20,7 @@ input loginInput {
 
 input UserInput {
     login: String
-    mail: String
+    email: String
     password: String
     studyField: String   
     role: String
