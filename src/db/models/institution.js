@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const institutionSchema = new mongoose.Schema(
   {
@@ -9,12 +9,12 @@ const institutionSchema = new mongoose.Schema(
     tags: String,
     description: String,
     link: String,
-    visite: Integer
+    visite: Number,
   },
   {
-    collection: "institutions",
-    timestamps: true
+    collection: 'institutions',
+    timestamps: true,
   }
 );
 
-export default mongoose.model("institution", institutionSchema);
+export default mongoose.model('institution', institutionSchema);
