@@ -14,9 +14,18 @@ const typeDefs = gql`
     ${mutationsType}
 `;
 
+const relations = {
+  Institution: {
+    user: (parent, $, { models }) => models.User.findById(parent.user),
+  },
+  Event: {
+    user: (parent, $, { models }) => models.User.findById(parent.user),
+  },
+};
+
 export default new ApolloServer({
   typeDefs,
-  resolvers: { Query: queries, Mutation: mutations },
+  resolvers: { Query: queries, Mutation: mutations, ...relations },
   context: ({ req }) => {
     const userId = verifyToken(req.headers.authorization);
     return {

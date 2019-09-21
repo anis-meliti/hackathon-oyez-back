@@ -10,6 +10,7 @@ const institutionSchema = new mongoose.Schema(
     description: String,
     link: String,
     visite: Number,
+    user: String,
   },
   {
     collection: 'institutions',

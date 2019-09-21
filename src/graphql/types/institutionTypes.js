@@ -8,7 +8,8 @@ type Institution {
     review: String
     tags: String
     description: String
-    link: String    
+    link: String
+    user: User    
 }
 
 input InstitutionInput {
@@ -20,6 +21,7 @@ input InstitutionInput {
     tags: String
     description: String
     link: String
+    user: String
 }
 `;
 

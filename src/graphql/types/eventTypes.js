@@ -4,11 +4,13 @@ type Event {
     title: String
     date: String
     description: String
+    user: User    
 }
 input EventInput {
     title: String
     date: String
     description: String
+    user: String
 }
 `;
 

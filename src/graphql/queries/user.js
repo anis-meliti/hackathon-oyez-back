@@ -1,5 +1,5 @@
-export const user = `
-    me: User
+export const userQueries = `
+  me: User
 `;
 
 export const userResolvers = {
