@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avantages et Inconvénients d'Internet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            animation: fadeInDown 1s ease;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid;
+        }
+
+        .advantages .card-header {
+            border-color: #10b981;
+        }
+
+        .disadvantages .card-header {
+            border-color: #ef4444;
+        }
+
+        .card-header h2 {
+            font-size: 2em;
+            margin-left: 15px;
+        }
+
+        .advantages .card-header h2 {
+            color: #10b981;
+        }
+
+        .disadvantages .card-header h2 {
+            color: #ef4444;
+        }
+
+        .icon {
+            font-size: 3em;
+        }
+
+        .advantages .icon {
+            color: #10b981;
+        }
+
+        .disadvantages .icon {
+            color: #ef4444;
+        }
+
+        .list-item {
+            margin-bottom: 25px;
+            padding-left: 30px;
+            position: relative;
+            animation: slideIn 0.5s ease;
+        }
+
+        .list-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .advantages .list-item::before {
+            background: #10b981;
+        }
+
+        .disadvantages .list-item::before {
+            background: #ef4444;
+        }
+
+        .list-item h3 {
+            font-size: 1.3em;
+            margin-bottom: 8px;
+            color: #1f2937;
+        }
+
+        .list-item p {
+            color: #6b7280;
+            line-height: 1.6;
+            font-size: 1em;
+        }
+
+        .conclusion {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: fadeIn 1.5s ease;
+        }
+
+        .conclusion h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .conclusion p {
+            color: #4b5563;
+            line-height: 1.8;
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .card {
+                padding: 25px;
+            }
+
+            .card-header h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌐 Internet</h1>
+            <p>Avantages et Inconvénients de la Révolution Numérique</p>
+        </div>
+
+        <div class="content">
+            <!-- Avantages -->
+            <div class="card advantages">
+                <div class="card-header">
+                    <div class="icon">✓</div>
+                    <h2>Avantages</h2>
+                </div>
+
+                <div class="list-item">
+                    <h3>Accès à l'information</h3>
+                    <p>Accès instantané à une quantité illimitée d'informations, de connaissances et de ressources éducatives du monde entier.</p>
+                </div>
+
+                <div class="list-item">
+                    <h3>Communication globale</h3>
+                    <p>Possibilité de communiquer instantanément avec n'importe qui dans le monde via email, messagerie, visioconférence et réseaux sociaux.</p>
+                </div>
+
+                <div class="list-item">
+                    <h3>Commerce en ligne</h3>
+                    <p>Facilite les achats et les transactions commerciales 24h/24, avec accès à des produits du monde entier.</p>
+                </div>
+
+                <div class="list-item">
+                    <h3>Éducation et formation</h3>
+                    <p>Cours en ligne, tutoriels, webinaires et formations accessibles à tous, permettant l'apprentissage à distance.</p>
+                </div>
+
+                <div class="list-item">
+                    <h3>Divertissement</h3>
+                    <p>Accès illimité à des films, musique, jeux, livres et autres contenus de divertissement en streaming.</p>
+                </div>
+
+                <div class="list-item">
+                    <h3>Opportunités professionnelles</h3>
+                    <p>Télétravail, freelancing, et nouvelles opportunités d'emploi sans contraintes géographiques.</p>
+                </div>
+
+                <div class="list-item">
+                    <h3>Services en ligne</h3>
+                    <p>Banque en ligne, administration, santé numérique et nombreux services accessibles depuis chez soi.</p>
+                </div>
+            </div>
+
+            <!-- Inconvénients -->
+            <div class="card disadvantages">
+                <div class="card-header">
+                    <div class="icon">✗</div>
+                    <h2>Inconvénients</h2>
+                </div>
+
+                <div class="list-item">
+                    <h3>Cybercriminalité</h3>
+                    <p>Risques de piratage, vol d'identité, fraudes en ligne et attaques informatiques menaçant la sécurité des données.</p>
+                </div>
+
+                <div class="list-item">
+                    <h3>Addiction et dépendance</h3>
+                    <p>Utilisation excessive pouvant mener à une dépendance, affectant la santé mentale et les relations sociales.</p>
+                </div>
+
+                <div class="list-item">
+                    <h3>Désinformation</h3>
+                    <p>Propagation rapide de fausses informations, fake news et théories du complot difficiles à contrôler.</p>
+                </div>
+
+                <div class="list-item">
+                    <h3>Atteinte à la vie privée</h3>
+                    <p>Collecte massive de données personnelles, surveillance et risques pour la confidentialité des utilisateurs.</p>
+                </div>
+
+                <div class="list-item">
+                    <h3>Cyberharcèlement</h3>
+                    <p>Harcèlement en ligne, intimidation et comportements toxiques sur les réseaux sociaux.</p>
+                </div>
+
+                <div class="list-item">
+                    <h3>Fracture numérique</h3>
+                    <p>Inégalités d'accès à Internet créant des disparités sociales et économiques entre populations.</p>
+                </div>
+
+                <div class="list-item">
+                    <h3>Impact sur la santé</h3>
+                    <p>Problèmes de vue, troubles du sommeil, sédentarité et impacts négatifs sur la santé physique et mentale.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="conclusion">
+            <h2>💡 Conclusion</h2>
+            <p>
+                Internet est un outil puissant qui a révolutionné notre société. Bien qu'il offre des opportunités extraordinaires 
+                en termes d'accès à l'information, de communication et de développement, il présente également des défis importants 
+                concernant la sécurité, la vie privée et le bien-être. L'utilisation responsable et éclairée d'Internet est 
+                essentielle pour maximiser ses avantages tout en minimisant ses risques.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
